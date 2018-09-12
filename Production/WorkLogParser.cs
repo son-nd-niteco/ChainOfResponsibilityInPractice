@@ -53,8 +53,8 @@ namespace Production
 
             var chainedDelegateCloneAndHandler = getCapturedChainedDelegateClonedAndHandler(next.Target);
             var handler = getHandler(chainedDelegateCloneAndHandler);
-            var victim = handler.GetType().Name;
-            return victim;
+
+            return handler.GetType().Name;
         }
     }
 
